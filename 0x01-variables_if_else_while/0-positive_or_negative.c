@@ -14,9 +14,17 @@ int main(void)
 int n;
 
 srand(time(0));
+<<<<<<< HEAD
 n = rand() - RAND_MAX /2;
 /* code */
 if (n >0)
+=======
+n = rand() - RAND_MAX / 2;
+if (n==0)
+{
+printf("%n is zero\n", n);  
+if (n > 0)
+>>>>>>> 4043f50ff6c4d608ff96ddd35e30f7080698521e
 {
    printf("i is positive\n", n);
 }
