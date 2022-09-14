@@ -4,35 +4,40 @@
 
 /**
 
- * main - check the code
+ * main - print putchar
 
- *
-
- * Return: Always 0.
+ * Return: always 0
 
  */
+
+
+
 int main(void)
 
 {
 
-	char *sh = "Holberton";
+	_putchar('_');
 
+	_putchar('p');
 
+	_putchar('u');
 
-	while (*sh)
+	_putchar('t');
 
-	{
+	_putchar('c');
 
-		_putchar(*sh);
+	_putchar('h');
 
-		sh++;
+	_putchar('a');
 
-	}
+	_putchar('r');
 
 	_putchar('\n');
 
 
 
 	return (0);
+
+
 
 }
