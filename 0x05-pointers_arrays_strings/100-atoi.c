@@ -1,18 +1,28 @@
 #include "holberton.h"
+
 /**
- * _atoi - Function that convert strin to int
- * @arr: String to convert to int
+ * _atoi - converts a string to an integer
+ * @s: string to convert
  *
- * Return: Value of converted number
+ * Return: value of integer
  */
-int _atoi(char *arr)
+int _atoi(char *s)
 {
-	int i = 0, convert = 0;
+	int i, j, n, m;
 
-	for (i = 0; arr[i] != '\0'; ++i)
+	i = n = 0;
+	m = 1;
+	while ((*(s + i) < '0' || *(s + i) > '9') && (*(s + i) != '\0'))
 	{
-		convert = convert * 10 + arr[i] - '0';
+		if (*(s + i) == '-')
+			m *= -1;
+		i++;
 	}
-
-	return (convert);
+	j = i;
+	while ((*(s + j) >= '0') && (*(s + j) <= '9'))
+	{
+		n = n * 10 + m * (*(s + j) - '0');
+		j++;
+	}
+	return (n);
 }
