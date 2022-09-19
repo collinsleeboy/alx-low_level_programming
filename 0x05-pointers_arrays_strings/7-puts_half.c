@@ -1,44 +1,25 @@
 #include "main.h"
 /**
+ * puts_half - print elve numbers
+ * @str: pointer to string
+ * Return: Nothing
+ */
 
-* _strcpy - Copy paste string
-
-* @dest: destination
-
-* @src: source
-
-*
-
-* Return: destination
-
-*/
-
-
-
-char *_strcpy(char *dest, char *src)
-
+void puts_half(char *str)
 {
+	int len = 0, i = 0, st;
 
-	int inc = 0;
-
-
-
-	while (*(src + inc) != '\0')
-
+	while (*(str + len) != '\0')
 	{
-
-		*(dest + inc) = *(src + inc);
-
-		inc++;
-
+		len++;
 	}
 
-	*(dest + inc) = '\0';
+	st = ((len - 1) / 2) + 1;
 
-
-
-
-
-	return (dest);
+	for (i = st; i < len; i++)
+	{
+		_putchar(*(str + i));
+	}
+	_putchar('\n');
 
 }
