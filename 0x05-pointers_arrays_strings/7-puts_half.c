@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 /**
  * puts_half - print elve numbers
  * @str: pointer to string
